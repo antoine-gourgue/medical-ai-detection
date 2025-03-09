@@ -103,24 +103,21 @@ F1-Score : 87 %
 
 ---
 
-## 📌 Comparaison des Modèles
-
-| Modèle | Exactitude | F1-Score | Temps d'entraînement | Robustesse |
-|--------|-----------|----------|----------------------|------------|
-| **KNN** | 77,40 % | 75 % | Rapide | Sensible au bruit |
-| **CNN** | 86,54 % | 87 % | Plus long | Apprentissage avancé |
-
-👉 **Le CNN est le modèle le plus performant**, tandis que KNN peut être une alternative rapide pour des classifications simples.
-
----
-
 ## 📌 Évaluation et Visualisation
 
-### **Matrice de Confusion**
-![Matrice de Confusion](images/confusion_matrix.png)
+### **Matrices de Confusion**
+#### 🔍 **KNN**
+![Matrice de Confusion KNN](images/confusion_matrix_knn.png)
 
-### **Courbe ROC & Score AUC**
-![Courbe ROC](images/roc_curve.png)
+#### 🔍 **CNN**
+![Matrice de Confusion CNN](images/confusion_matrix_cnn.png)
+
+### **Courbes ROC & Scores AUC**
+#### 🔍 **KNN**
+![Courbe ROC KNN](images/roc_curve_knn.png)
+
+#### 🔍 **CNN**
+![Courbe ROC CNN](images/roc_curve_cnn.png)
 
 🔍 **Analyse des Résultats :**
 ✔️ **Le CNN atteint une AUC plus élevée**, indiquant une meilleure séparation des classes.
@@ -135,4 +132,5 @@ F1-Score : 87 %
 ✔️ Le **CNN** est nettement plus performant que le **KNN** pour la détection de la pneumonie.
 ✔️ L'extraction de caractéristiques améliore la robustesse du KNN.
 ✔️ Les modèles de Deep Learning sont mieux adaptés aux images médicales complexes.
+
 
