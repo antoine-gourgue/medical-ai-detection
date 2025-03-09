@@ -1,0 +1,16 @@
+tensorflow
+keras
+torch
+torchvision
+torchaudio
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+opencv-python
+tqdm
+jupyter
+fastapi
+uvicorn
+pillow
