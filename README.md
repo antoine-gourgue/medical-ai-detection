@@ -13,6 +13,20 @@ L'objectif est d'identifier l'approche la plus performante pour classifier les r
 
 ---
 
+## 📌 Exemple de Radiographies Thoraciques
+
+### **📷 Exemple d'une radiographie NORMALE**
+![Radio Normale](images/radio_normale.jpeg)
+
+### **📷 Exemple d'une radiographie avec PNEUMONIE**
+![Radio Pneumonie](images/radio_pneumonie.jpeg)
+
+🔍 **Différences visibles :**
+- Une radiographie **normale** montre des poumons clairs avec une structure homogène.
+- Une radiographie de **pneumonie** présente des zones d'opacité, souvent localisées, indiquant une infection pulmonaire.
+
+---
+
 ## 📌 Jeu de Données et Prétraitement
 
 ### **Présentation du Jeu de Données**
