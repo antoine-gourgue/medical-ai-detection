@@ -33,7 +33,8 @@ const handleImageSelected = (imageFile) => {
 
     <div v-if="prediction">
       <h2>Résultat de la prédiction :</h2>
-      <p><strong>Type :</strong> {{ prediction.prediction }}</p>
+      <p><strong>Type :</strong> {{ prediction.result }}</p>
+      <p><strong>Prediction: {{prediction.prediction}}</strong></p>
     </div>
   </div>
 </template>

@@ -51,9 +51,9 @@ def upload_and_predict():
     file_path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
     file.save(file_path)
 
-    result, confidence = predict_pneumonia(file_path)
+    result, prediction = predict_pneumonia(file_path)
 
-    return jsonify({"filename": filename, "prediction": result, "confidence": confidence}), 200
+    return jsonify({"filename": filename, "result": result, "prediction": prediction}), 200
 
 
 if __name__ == "__main__":
