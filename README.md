@@ -102,13 +102,13 @@ F1-Score : 75 %
 
 ### **Résultats CNN**
 ```
-Exactitude (Accuracy) : 86,54 %
-F1-Score : 87 %
+Exactitude (Accuracy) : 90,71 %
+F1-Score : 90 %
 ```
 | Classe | Précision | Rappel | F1-Score | Support |
-|--------|----------|--------|----------|---------|
-| **Normal** | 0.80 | 0.85 | 0.82 | 234 |
-| **Pneumonie** | 0.90 | 0.88 | 0.89 | 390 |
+|--------|-----------|--------|----------|---------|
+| **Normal** | 0.92      | 0.83   | 0.87     | 234 |
+| **Pneumonie** | 0.90      | 0.95   | 0.93     | 390 |
 
 🔍 **Observations :**
 ✔️ CNN surpasse KNN en termes de précision et de rappel.
