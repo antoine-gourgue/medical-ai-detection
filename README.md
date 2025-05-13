@@ -85,30 +85,32 @@ F1-Score : 75 %
 ### **Architecture du CNN**
 | Couche | Type | Filtres | Taille du noyau | Activation |
 |--------|------|---------|----------------|------------|
-| **Entrée** | Convolutionnelle | 32 | (3,3) | ReLU |
-| | MaxPooling | - | (2,2) | - |
-| | Convolutionnelle | 64 | (3,3) | ReLU |
-| | MaxPooling | - | (2,2) | - |
-| | Convolutionnelle | 128 | (3,3) | ReLU |
-| | MaxPooling | - | (2,2) | - |
-| | Convolutionnelle | 256 | (3,3) | ReLU |
-| | MaxPooling | - | (2,2) | - |
-| | Flatten | - | - | - |
-| | Dense | 512 | - | ReLU |
-| | Dropout | - | - | 0.5 |
-| | Dense | 256 | - | ReLU |
-| | Dropout | - | - | 0.3 |
-| **Sortie** | Dense | 1 | - | Sigmoïde |
+| **Entrée** | Convolutionnelle | 32      | (3,3) | ReLU |
+| | MaxPooling | -       | (2,2) | - |
+| | Convolutionnelle | 64      | (3,3) | ReLU |
+| | MaxPooling | -       | (2,2) | - |
+| | Convolutionnelle | 128     | (3,3) | ReLU |
+| | MaxPooling | -       | (2,2) | - |
+| | Convolutionnelle | 256     | (3,3) | ReLU |
+| | MaxPooling | -       | (2,2) | - |
+| | Convolutionnelle | 512     | (3,3) | ReLU |
+| | MaxPooling | -       | (2,2) | - |
+| | Flatten | -       | - | - |
+| | Dense | 512     | - | ReLU |
+| | Dropout | -       | - | 0.5 |
+| | Dense | 256     | - | ReLU |
+| | Dropout | -       | - | 0.3 |
+| **Sortie** | Dense | 1       | - | Sigmoïde |
 
 ### **Résultats CNN**
 ```
-Exactitude (Accuracy) : 90,71 %
-F1-Score : 90 %
+Exactitude (Accuracy) : 91,19 %
+F1-Score : 91 %
 ```
 | Classe | Précision | Rappel | F1-Score | Support |
 |--------|-----------|--------|----------|---------|
-| **Normal** | 0.92      | 0.83   | 0.87     | 234 |
-| **Pneumonie** | 0.90      | 0.95   | 0.93     | 390 |
+| **Normal** | 0.92      | 0.89   | 0.90     | 624     |
+| **Pneumonie** | 0.91      | 0.91   | 0.91     | 624     |
 
 🔍 **Observations :**
 ✔️ CNN surpasse KNN en termes de précision et de rappel.
@@ -124,7 +126,7 @@ F1-Score : 90 %
 ![Matrice de Confusion KNN](images/confusion_matrix_knn.png)
 
 #### 🔍 **CNN**
-![Matrice de Confusion CNN](images/confusion_matrix_cnn.png)
+![Matrice de Confusion CNN](images/matrice_cnn.png)
 
 ### **Courbes ROC & Scores AUC**
 #### 🔍 **KNN**
